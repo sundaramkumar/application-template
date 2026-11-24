@@ -1,7 +1,7 @@
 # CLAUDE.md
 
-Application template — Bun monorepo (`application/backend`, `application/frontend`,
-`application/shared`) with users, roles/RBAC, audit logs and API keys; duplicated to
+Application template — Bun monorepo (`backend`, `frontend`,
+`shared`) with users, roles/RBAC, audit logs and API keys; duplicated to
 start new projects.
 
 **Read [ARCHITECTURE.md](./ARCHITECTURE.md) first** — it defines the layering, the

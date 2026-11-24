@@ -13,14 +13,13 @@ as a Bun monorepo. Duplicate this repo to start a new project.
 
 ## Layout
 ```
-application/
-  backend/    Hono API  (port 3005)
-  frontend/   React SPA (port 5175)
-  shared/     @shared — the shared API contract (see below)
+backend/    Hono API  (port 3005)
+frontend/   React SPA (port 5175)
+shared/     @shared — the shared API contract (see below)
 ```
 
 ## Shared contract (`@shared`)
-Everything the frontend and backend must agree on lives in `application/shared/src` and is
+Everything the frontend and backend must agree on lives in `shared/src` and is
 imported via the `@shared` alias — no duplicated type definitions across sides:
 
 - `types/common.types.ts` — **common API types**: `ApiResponse<T>`, `ApiError`,
@@ -42,7 +41,7 @@ bun install
 createdb application    # or: psql -c 'CREATE DATABASE application'
 
 # 3. Configure the backend
-cp application/backend/.env.example application/backend/.env
+cp backend/.env.example backend/.env
 #   set DATABASE_URL=postgresql://postgres:postgres@localhost:5432/application
 #   set a JWT_SECRET (≥ 32 chars)
 

@@ -73,7 +73,7 @@ one global handler.
 ## Where things live
 | You want to… | Look in |
 |---|---|
-| Change what the UI looks like | `application/frontend/src/features/<feature>` |
-| Change a business rule or query | `application/backend/src/features/<feature>/<feature>.service.ts` |
-| Change a request/response shape | `application/shared/src` (types + schemas) |
-| Change the database shape | `application/backend/src/db/schema` → generate a migration |
+| Change what the UI looks like | `frontend/src/features/<feature>` |
+| Change a business rule or query | `backend/src/features/<feature>/<feature>.service.ts` |
+| Change a request/response shape | `shared/src` (types + schemas) |
+| Change the database shape | `backend/src/db/schema` → generate a migration |

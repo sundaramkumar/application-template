@@ -2,20 +2,20 @@
   "name": "application",
   "private": true,
   "workspaces": [
-    "application/backend",
-    "application/frontend",
-    "application/shared"
+    "backend",
+    "frontend",
+    "shared"
   ],
   "scripts": {
-    "dev:backend": "cd application/backend  && bun run dev",
-    "dev:frontend": "cd application/frontend && bun run dev",
+    "dev:backend": "cd backend  && bun run dev",
+    "dev:frontend": "cd frontend && bun run dev",
     "dev": "bun run dev:backend & bun run dev:frontend",
     "typecheck": "bun run --filter '*' typecheck",
     "build": "bun run --filter '*' build",
     "lint": "bun run --filter '*' lint",
-    "db:generate": "cd application/backend && bun run db:generate",
-    "db:migrate": "cd application/backend && bun run db:migrate",
-    "seed": "cd application/backend && bun run seed",
+    "db:generate": "cd backend && bun run db:generate",
+    "db:migrate": "cd backend && bun run db:migrate",
+    "seed": "cd backend && bun run seed",
     "prepare": "lefthook install"
   },
   "devDependencies": {

@@ -6,14 +6,14 @@ first, read [OVERVIEW.md](./OVERVIEW.md).
 
 ## Monorepo (Bun workspaces)
 ```
-application/backend   application/frontend   application/shared
+backend   frontend   shared
 ```
-- `@shared` resolves to `application/shared/src` via tsconfig `paths` + Vite alias (and is a
+- `@shared` resolves to `shared/src` via tsconfig `paths` + Vite alias (and is a
   Bun workspace package, `@application/shared`).
 - Run everything from the repo root via `bun run --filter '*' <script>` wrappers
   (`dev`, `typecheck`, `build`, `lint`, `db:migrate`, `seed`).
 
-## Backend (`application/backend/src`)
+## Backend (`backend/src`)
 Feature-based, layered. Each feature folder under `features/<name>/`:
 
 | File | Responsibility |
@@ -63,7 +63,7 @@ cross the FE/BE boundary.
 Use `parseListQuery(c, { sortable, defaultSort })` (whitelisted sort columns) and return
 `paginated(c, data, buildMeta(total, page, limit))` → `{ data, meta: {page,limit,total,totalPages} }`.
 
-## Frontend (`application/frontend/src`)
+## Frontend (`frontend/src`)
 Feature-based mirror under `features/<name>/{api,screens}`. Shared in `shared/`:
 - `api/client.ts` — `apiFetch` (cookies via `credentials: 'include'`, central error mapping).
 - `components/ui` — DataTable, Modal, Select, Input, ConfirmDialog, Tooltip…
