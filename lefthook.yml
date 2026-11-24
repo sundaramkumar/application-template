@@ -1,0 +1,10 @@
+# Git hooks (managed by lefthook). Install once with: bunx lefthook install
+pre-commit:
+  commands:
+    lint:
+      run: bun run lint
+
+pre-push:
+  commands:
+    typecheck:
+      run: bun run typecheck

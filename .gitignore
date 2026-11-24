@@ -1,0 +1,64 @@
+# ── Dependencies ────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Local / runtime ─────────────────────────────────────────────
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+session
+
+# ── Build outputs ───────────────────────────────────────────────
+dist/
+build/
+out/
+.output/
+
+# ── Environment / secrets ────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+!.env.example
+
+# ── Logs ────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# ── OS / editor artifacts ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# ── Test / coverage outputs ──────────────────────────────────────
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+e2e/results/
+
+# ── Vite / bundler caches ────────────────────────────────────────
+.vite/
+.cache/
+*.tsbuildinfo
+
+# ── Drizzle generated artifacts ──────────────────────────────────
+# Keep migrations (source-controlled), ignore metadata snapshots if preferred
+# backend/src/db/migrations/meta/   ← uncomment to ignore snapshots
+# admin-backend/src/db/migrations/meta/
+
+# ── Misc ─────────────────────────────────────────────────────────
+*.pem
+*.p12
+*.key

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["bun-types"],
+    "paths": {
+      "@/*":       ["./src/*"],
+      "@shared":   ["../shared/src/index.ts"],
+      "@shared/*": ["../shared/src/*"]
+    }
+  },
+  "include": ["src/**/*", "../shared/src/**/*", "drizzle.config.ts"]
+}

@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1781357138921,
+      "tag": "0000_init_users_roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1781360650076,
+      "tag": "0001_audit_softdelete_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1781420965050,
+      "tag": "0002_fair_marvel_apes",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1781508677691,
+      "tag": "0003_cooing_fallen_one",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1781516946821,
+      "tag": "0004_wealthy_jamie_braddock",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1789554611493,
+      "tag": "0005_uuid_primary_keys",
+      "breakpoints": true
+    }
+  ]
+}
